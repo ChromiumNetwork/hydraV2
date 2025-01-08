@@ -13,13 +13,25 @@ def fetch_game_data(url):
 
 # Function to update the URL and image paths
 def update_url_and_image(game):
-    # Add base URL in front of the url and image fields
-    game['url'] = f"https://kaizo-loveschicken.onrender.com{game['url']}"
-    game['image'] = f"https://kaizo-loveschicken.onrender.com{game['image']}"
+    # Base URL for all paths
+    base_url = "https://kaizo-assets.onrender.com"
+    fallback_image = f"{base_url}/assets/notfound.png"  # Updated fallback path without '...'
+
+    # Update the 'url' field
+    game['url'] = f"{base_url}{game['url']}"
+
+    # Update the 'image' field
+    if not game.get('image'):  # If image is missing, empty, or None
+        game['image'] = fallback_image
+    else:
+        # Remove leading '...' if present
+        game['image'] = game['image'].lstrip('.')  # Removes any leading dots
+        game['image'] = f"{base_url}{game['image']}"
+    
     return game
 
 # Function to save the processed games as a new JSON file
-def save_to_json(games, filename="./games.json"):
+def save_to_json(games, filename="./games/games.json"):
     try:
         with open(filename, 'w') as f:
             json.dump(games, f, indent=4)
