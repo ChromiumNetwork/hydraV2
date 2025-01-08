@@ -475,6 +475,212 @@ select {
 
 }
 
+/* changeloge me */
+.modal1 {
+    position: fixed; /* Ensures the modal is fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    z-index: 9999; /* High value to ensure it's above everything */
+    opacity: 0; /* Invisible initially */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal.show {
+    display: flex;
+    opacity: 1; /* Fully visible */
+  }
+  
+  .modal-container {
+    max-height: 90vh;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Adds depth */
+    z-index: 10000; /* Higher than .modal */
+    
+    /* Animation */
+    transform: scale(0.8); /* Start smaller */
+    opacity: 0; /* Initially invisible */
+    animation: fadeInGooey 0.5s ease forwards; /* Smooth animation */
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeInGooey {
+    0% {
+      transform: scale(0.8); /* Start smaller */
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05); /* Slight bounce effect */
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1); /* End at full size */
+      opacity: 1;
+    }
+  }
+  
+
+  .modal-container-header {
+    padding: 16px 32px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+  }
+
+.modal-container-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #750550;
+}
+
+.modal-container-title svg {
+  width: 32px;
+  height: 32px;
+}
+
+.modal-container-body {
+  padding: 24px 32px 32px;
+  overflow-y: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.rtf {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  ul,
+  ol {
+    margin-left: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+}
+
+.modal-container-footer {
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+.modal-container-footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 24px;
+  right: 24px;
+  height: 50px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.75), transparent);
+  pointer-events: none;
+}
+
+.button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &.is-ghost {
+    color: #750550;
+    &:hover,
+    &:focus {
+      background-color: #dfdad7;
+    }
+  }
+
+  &.is-primary {
+    background-color: #750550;
+    color: #fff;
+    &:hover,
+    &:focus {
+      background-color: #4a0433;
+    }
+  }
+}
+
+.icon-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #dfdad7;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* support me */
 .modal {
     position: fixed; /* Ensures the modal is fixed relative to the viewport */
