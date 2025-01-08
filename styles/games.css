@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+#game-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  margin-left: 5em; /* Adjust this based on your navbar width */
+  padding-top: 20px; /* Optional: Add some top padding to space out from the navbar */
+  width: calc(100% - 5em); /* Ensures the game links container respects the navbar width */
+  gap: 20px; /* Adds spacing between the game links */
+  padding: 20px; /* Add padding around the container */
+}
+
+#game-links a {
+  font-family: "Archivo Black", serif;
+  transition: transform 0.45s ease-in-out, box-shadow 0.45s ease-in-out, background-color 0.45s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 10px; /* Adds space around each game link */
+  background: linear-gradient(to bottom, #2f549a, #223e6d);
+  border-radius: 10px; /* Adds rounded corners for the game links */
+  text-decoration: none; /* Removes underline from the links */
+  color: white; /* Ensures text color is readable */
+  word-wrap: break-word; /* Breaks long words if necessary */
+}
+
+#game-links a:hover {
+  animation: gooeyPop 0.6s ease forwards; /* Trigger the gooey pop effect */
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  background-color: #0d2b76; /* Change this to your desired background color */
+}
+
+/* Gooey Pop Animation */
+@keyframes gooeyPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Slight overshoot for a gooey feel */
+  }
+  70% {
+    transform: scale(0.95); /* Slight shrink back */
+  }
+  100% {
+    transform: scale(1); /* Settle at original size */
+  }
+}
+
+#game-links .game-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px; /* Fixed width for consistent layout */
+  margin-bottom: 10px;
+  overflow: hidden; /* Prevents content from spilling out */
+  text-overflow: ellipsis; /* Adds "..." for overflowed text */
+  white-space: nowrap; /* Ensures text remains on one line */
+}
+
+#game-links .game-link:hover {
+  white-space: normal; /* Allows full text to wrap on hover */
+  text-overflow: unset; /* Resets ellipsis on hover */
+  overflow: visible; /* Shows full content */
+}
+
+#game-links .game-image {
+  max-width: 100px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
+  margin-bottom: 10px;
+  border-radius: 10px; /* Adds rounded corners to the images */
+  overflow: hidden;
+  border: 3px solid #416bb6; /* Adds a border to the images */
+  background: linear-gradient(to bottom, #6495ED, #416bb6); /* Adds gradient to the background of the images */
+  padding: 5px; /* Optional padding around the image */
+}
+
+#game-cover {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #000000; /* Add background color to game cover */
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  z-index: 1002;
+}
+
+#game-cover:hover {
+  background-color: #0d2b76; /* Change to hover background color */
+  color: #ff0; /* Example color change on hover */
+}
