@@ -24,5 +24,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       preloader.style.display = 'none'; // Completely hide the preloader
     }, 1000); // Match this timeout with the fade-out duration
-  }, 3000); // Preloader is visible for 3 seconds
+  }, 2500); // Preloader is visible for 3 seconds
 });

@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.bunny.net/css?family=pixelify-sans:600');
+
+#games-count-heading {
+  font-family: 'Pixelify Sans', display;
+  position: relative;  /* Make it relative so we can adjust z-index */
+  z-index: 10; /* Ensure the heading appears on top of the navbar */
+  margin-top: 5px; /* Add a little space from the top of the page */
+  text-align: center; /* Center the text */
+  color: white; /* Make the text color white for better visibility */
+  padding: 20px 0; /* Add padding for spacing around the heading */
+}
 
 #game-links {
   display: flex;

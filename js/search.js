@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gameLinksContainer = document.getElementById('game-links');
   const searchBarContainer = document.getElementById('search-bar-container');
   const closeButton = document.getElementById('close-search'); // Close button
+  const gamesCountHeading = document.getElementById('games-count-heading'); // Get the heading element
   let gamesData = [];
 
   // Fetch games data
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(games => {
       gamesData = games;
       displayAllGames(gamesData); // Display all games initially
+      updateGamesCount(gamesData); // Update game count
     })
     .catch(error => {
       console.error('Error fetching game data:', error);
@@ -22,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gameLinksContainer.innerHTML = ''; // Clear previous game links
     games.forEach(game => {
       const gameLink = document.createElement('a');
-      gameLink.href = game.url;
+      gameLink.id = 'game-cover';
+      gameLink.href = `games.html?game=${encodeURIComponent(game.url)}`; // Redirect through games.html
       gameLink.classList.add('game-link');
 
       const gameImage = document.createElement('img');
@@ -39,12 +42,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Function to update the game count in the heading
+  function updateGamesCount(games) {
+    const gameCount = games.length; // Get the number of games
+    gamesCountHeading.textContent = `Go through our ${gameCount} games we have!`; // Update the heading text
+  }
+
   // Function to search games as user types
   searchInput.addEventListener('input', (event) => {
     const query = event.target.value.toLowerCase().trim();
     if (query === '') {
       searchResultsContainer.style.display = 'none'; // Hide results if query is empty
       displayAllGames(gamesData); // Show all games
+      updateGamesCount(gamesData); // Update game count after search clears
       return;
     }
 
@@ -64,15 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
         resultItem.classList.add('search-result-item');
         resultItem.textContent = game.name;
 
-        // Add a click event to the result item that redirects to the game
+        // Add a click event to the result item that redirects to games.html
         resultItem.addEventListener('click', () => {
-          window.location.href = game.url; // Redirect to the game's page
+          window.location.href = `games.html?game=${encodeURIComponent(game.url)}`;
         });
 
         searchResultsContainer.appendChild(resultItem);
       });
       searchResultsContainer.style.display = 'block';
     }
+
+    updateGamesCount(filteredGames); // Update the count after filtering
   });
 
   // Show the search bar when the search button is clicked
