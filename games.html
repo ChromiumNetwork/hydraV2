@@ -8,14 +8,13 @@
     /* Full-screen iframe style */
     iframe {
       position: absolute;
-      top: 0; /* Start the iframe 75px below the top to prevent overlap with navbar */
+      top: 0;
       left: 0;
       width: 100%;
-      height: 100%; /* Adjust the iframe height to fill the remaining screen space after navbar */
+      height: 100%;
       border: none;
+      display: none; /* Initially hide the iframe */
     }
-
-    /* Navbar container to hold buttons and logo */
     .navbar {
       position: fixed;
       top: 9px; /* Offset the navbar slightly from the top */
@@ -64,50 +63,87 @@
       margin-left: auto; /* Align logo to the right */
       margin-top: 1px; /* Optional: move the logo slightly down */
     }
+    /* Preloader styling */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(32, 32, 32); /* Dark overlay */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
 
-    /* Style for centered H1 */
-    .no-game-found {
+    #preloader-container {
       text-align: center;
-      font-size: 36px;
-      margin-top: 100px; /* Position the message in the center of the screen */
+    }
+
+    #preloader img {
+      width: 100px;
+      height: auto;
+    }
+
+    #preloader-text {
       color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
     }
 
     /* Gradient background */
     body {
-      /* Apply a gradient background from dark gray to light gray */
       background: linear-gradient(to bottom, #5a5959, #292828);
-      font-family: Arial, sans-serif; /* Optional: You can choose any font you like */
-      height: 100vh; /* Ensure the background covers the entire viewport */
-      margin: 0; /* Remove default margin */
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+    }
+
+    /* No Game Found Message */
+    .no-game-found {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 100px;
+      color: white;
     }
 
   </style>
 </head>
 <body>
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="preloader-container">
+      <img src="rocket.gif" alt="Loading..."> <!-- Replace with your rocket gif path -->
+      <p id="preloader-text">Searching game...</p>
+    </div>
+  </div>
+
   <!-- Navbar with buttons and logo -->
   <div class="navbar">
-    <!-- Home Button -->
     <button id="home-button" class="nav-button" onclick="goHome()">
       <i class="fas fa-home"></i>
     </button>
-
-    <!-- Fullscreen Button -->
     <button id="fullscreen-button" class="nav-button" onclick="toggleFullScreen()">
       <i class="fas fa-expand"></i>
     </button>
-    <!-- Logo -->
   </div>
 
   <!-- Embedding the Game File -->
   <iframe id="game-iframe" src="" title="Your Game"></iframe>
 
   <!-- No Game Found Message -->
-  <h1 id="no-game-message" class="no-game-found" style="display: none;">Hmm that's odd, couldn't find a game URL. Try again and if this error appears multiple times, <strong>Contact me for a fix!</strong></h1>
+  <h1 id="no-game-message" class="no-game-found" style="display: none;">
+    Hmm that's odd, couldn't find a game URL. Try again and if this error appears multiple times, <strong>Contact me for a fix!</strong>
+  </h1>
 
   <!-- Font Awesome Icons -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
@@ -119,15 +155,52 @@
       return urlParams.get(name);
     }
 
-    // Get the game URL from the query parameter (the correct key is 'game')
-    const gameUrl = getQueryParam('game'); // Changed 'url' to 'game'
+    const gameUrl = getQueryParam('game'); // This will be null if no 'game' parameter exists
+    const preloaderText = [
+      "Searching game...",
+      "Example1",
+      "Example2",
+      "Example3"
+    ];
+    let textIndex = 0;
+    const preloaderTextElement = document.getElementById('preloader-text');
+    const preloader = document.getElementById('preloader');
+    const gameIframe = document.getElementById('game-iframe');
+
+    // Function to change the preloader text every 2 seconds
+    function cyclePreloaderText() {
+      setInterval(() => {
+        preloaderTextElement.textContent = preloaderText[textIndex];
+        textIndex = (textIndex + 1) % preloaderText.length; // Loop back to the first sentence
+        if (textIndex === 0) {
+          // If it's the first sentence, fade out after showing the last text
+          setTimeout(() => {
+            preloader.style.opacity = '0'; // Fade out the preloader
+            setTimeout(() => {
+              preloader.style.display = 'none'; // Hide the preloader after fading out
+
+              if (gameUrl) {
+                // If a valid game URL exists, show the iframe and load the game
+                gameIframe.style.display = 'block';
+                gameIframe.src = gameUrl; // Set the game URL
+              } else {
+                // If no valid game URL is found, show the "No Game Found" message
+                document.getElementById('no-game-message').style.display = 'block';
+              }
+            }, 1000); // Delay to match fade-out duration
+          }, 2000); // Show the last text before fading
+        }
+      }, 2000); // Change text every 2 seconds
+    }
+
+    // Start cycling preloader text
+    cyclePreloaderText();
 
     // If the game URL exists, set it in the iframe
     if (gameUrl) {
-      document.getElementById('game-iframe').src = gameUrl;
+      gameIframe.src = gameUrl; // Initially set the iframe source
     } else {
-      // If no game URL found, show the message
-      document.getElementById('no-game-message').style.display = 'block';
+      document.getElementById('no-game-message').style.display = 'block'; // Show "No Game Found" message
     }
 
     // Function to navigate back to the homepage
