@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/navbar.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/search.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <link rel="stylesheet" href="styles/games.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/search.css">
+  <link rel="stylesheet" href="styles/preloader.css">
+
+
+</head>
+<body>
+  <div id="preloader">
+    <div id="preloader-container">
+      <img src="https://raw.githubusercontent.com/n3r4zzurr0/svg-spinners/refs/heads/main/svg-css/90-ring-with-bg.svg" alt="Loading...">
+      <p id="tip-of-the-day"></p> <!-- Tip text will go here -->
+    </div>
+  </div>
+<nav id="navbar">
+    <ul class="navbar-items flexbox-col">
+      <li class="navbar-logo flexbox-left">
+        <a class="navbar-item-inner flexbox">
+          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54">
+            <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48"/>
+            <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91 1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28"/>
+          </svg>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <span class="link-text">Search a game</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="hand-left-outline"></ion-icon>
+          </div>
+          <span class="link-text">coming soon!</span>
+        </a>
+      </li>
+      <li class="navbar-item flexbox-left settings-item">
+        <a class="navbar-item-inner flexbox-left">
+          <div class="navbar-item-inner-icon-wrapper flexbox">
+            <ion-icon name="logo-snapchat"></ion-icon>
+          </div>
+          <span class="link-text">Support me!</span>
+        </a>
+      </li>
+    </ul>
+</nav>
+
+<!-- Modal Structure -->
+<div id="popup" class="modal" hidden>
+  <div class="modal-container">
+    <div class="modal-container-header">
+      <div class="modal-container-title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z" fill="#750550" />
+        </svg>
+        Support Me
+      </div>
+      <button id="close-modal" class="icon-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-container-body">
+      <p>Chromium Network is a small community with only one member, Me. I don’t ask for money, I do this for free as an unblocked games source. So to support me, I only ask for you to follow me on Instagram <strong>@naggetsxd</strong>!</p>
+    </div>
+    <div class="modal-container-footer">
+      <button id="close-footer" class="button is-primary">Continue</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Search Bar Modal -->
+<div id="search-bar-container">
+  <div class="search-bar">
+    <input type="text" id="game-search" placeholder="Search a game..." />
+    <button id="search-button">
+      <ion-icon name="search-outline"></ion-icon>
+    </button>
+    <!-- Close button -->
+    <button id="close-search" class="close-button"><ion-icon name="close"></ion-icon></button>
+  </div>
+  <div id="search-results" class="search-results">
+    <!-- Search results will appear here -->
+  </div>
+</div>
+
+
+
+
+<h2 id="games-count-heading">Go through our {gamenumber} games we have!</h2>
+<div id="game-links">
+  <!-- Game links will be dynamically injected here -->
+</div>
+
+
+</body>
+</html>
