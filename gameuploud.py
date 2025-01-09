@@ -1,56 +1,63 @@
 import requests
-import json
+import os
+import time
+import threading
+import sys
 
-# Function to fetch the JSON from the given URL
-def fetch_game_data(url):
+# Loader control variables
+stop_loader = False
+
+# Function to display a loader animation
+def show_loader():
+    global stop_loader
+    animation = "|/-\\"
+    idx = 0
+    while not stop_loader:
+        sys.stdout.write(f"\r{animation[idx % len(animation)]}")
+        sys.stdout.flush()
+        idx += 1
+        time.sleep(0.1)
+    sys.stdout.write("\r" + " " * 10 + "\r")  # Clear the loader line when done
+
+# Function to download and save the games.json file locally
+def download_games_json(url, save_path="./games/games.json"):
+    global stop_loader
     try:
-        response = requests.get(url)
+        print("Starting download...")
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)  # Create directory if it doesn't exist
+
+        # Start loader in a separate thread
+        loader_thread = threading.Thread(target=show_loader, daemon=True)
+        loader_thread.start()
+
+        # Make the request to download the file
+        response = requests.get(url, stream=True)
         response.raise_for_status()  # Check if the request was successful
-        return response.json()  # Return JSON data
+
+        # Process and save the file
+        with open(save_path, "wb") as file:
+            for chunk in response.iter_content(chunk_size=8192):  # Download in chunks
+                if chunk:
+                    file.write(chunk)  # Write chunk to file
+
+        stop_loader = True
+        loader_thread.join()
+
+        print("\nDownload complete!")
+        print(f"Downloaded games.json and saved to {save_path}")
+        return save_path
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching the data: {e}")
+        stop_loader = True
+        loader_thread.join()
+        print(f"\nError downloading the games.json file: {e}")
         return None
-
-# Function to update the URL and image paths
-def update_url_and_image(game):
-    # Base URL for all paths
-    base_url = "https://kaizo-assets.onrender.com"
-    fallback_image = f"{base_url}/assets/notfound.png"  # Updated fallback path without '...'
-
-    # Update the 'url' field
-    game['url'] = f"{base_url}{game['url']}"
-
-    # Update the 'image' field
-    if not game.get('image'):  # If image is missing, empty, or None
-        game['image'] = fallback_image
-    else:
-        # Remove leading '...' if present
-        game['image'] = game['image'].lstrip('.')  # Removes any leading dots
-        game['image'] = f"{base_url}{game['image']}"
-    
-    return game
-
-# Function to save the processed games as a new JSON file
-def save_to_json(games, filename="./games/games.json"):
-    try:
-        with open(filename, 'w') as f:
-            json.dump(games, f, indent=4)
-        print(f"Games data has been successfully saved to {filename}")
     except IOError as e:
-        print(f"Error saving to JSON file: {e}")
-
-# Main function to execute the steps
-def main():
-    url = "https://kaizo-loveschicken.onrender.com/games/games.json"
-    game_data = fetch_game_data(url)  # Fetch game data
-    
-    if game_data:
-        # Update the URL and image for each game
-        updated_games = [update_url_and_image(game) for game in game_data]
-        save_to_json(updated_games)  # Save the updated game data as JSON
-    else:
-        print("No game data to process.")
+        stop_loader = True
+        loader_thread.join()
+        print(f"\nError saving the games.json file: {e}")
+        return None
 
 # Run the script
 if __name__ == "__main__":
-    main()
+    url = "https://kaizo-assets.onrender.com/games/games.json"
+    download_games_json(url)  # Download the games.json from the URL
