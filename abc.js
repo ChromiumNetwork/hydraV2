@@ -13,7 +13,7 @@ if (
 ) {
   const popup = open("about:blank", "_blank");
   if (!popup || popup.closed) {
-    alert("bro")
+    
   } else {
     const doc = popup.document;
     const iframe = doc.createElement("iframe");
