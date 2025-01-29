@@ -59,5 +59,5 @@ def download_games_json(url, save_path="./games/games.json"):
 
 # Run the script
 if __name__ == "__main__":
-    url = "https://kaizo-assets.onrender.com/games/games.json"
+    url = "https://kaizo-theassetsvro.onrender.com/games/games.json"
     download_games_json(url)  # Download the games.json from the URL
