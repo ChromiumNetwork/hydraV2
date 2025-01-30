@@ -1,0 +1,52 @@
+[
+  {
+    "name": "2048-multitask",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/2048-multitask/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/2048-multitask/favicon.ico"
+  },
+  {
+    "name": "9007199254740992",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/9007199254740992/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/9007199254740992/favicon.ico"
+  },
+  {
+    "name": "DogeMiner",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/DogeMiner/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/DogeMiner/favicon.ico"
+  },
+  {
+    "name": "Dogeminer2",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/Dogeminer2/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/Dogeminer2/dogeloader.svg"
+  },
+  {
+    "name": "MonkeyMart",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/MonkeyMart/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/MonkeyMart/bg_loading.png"
+  },
+  {
+    "name": "ShapeShootout",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/ShapeShootout/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/ShapeShootout/Icon.png"
+  },
+  {
+    "name": "Stickman-Survival",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/Stickman-Survival/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/Stickman-Survival/Icon.png"
+  },
+  {
+    "name": "a-dance-of-fire-and-ice",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/a-dance-of-fire-and-ice/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/a-dance-of-fire-and-ice/splash.png"
+  },
+  {
+    "name": "adventure-drivers",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/adventure-drivers/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/adventure-drivers/backblue.gif"
+  },
+  {
+    "name": "alienhominid",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/alienhominid/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/alienhominid/alienhominid.jpg"
+  }
+]
