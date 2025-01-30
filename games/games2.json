@@ -1,5 +1,270 @@
 [
   {
+    "name": "dante",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/dante/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/dante/__big (1).jpg"
+  },
+  {
+    "name": "deal-or-no-deal",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/deal-or-no-deal/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/deal-or-no-deal/index.jpg"
+  },
+  {
+    "name": "deepest-sword",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/deepest-sword/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/deepest-sword/splash.jpg"
+  },
+  {
+    "name": "defend-the-tank",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/defend-the-tank/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/defend-the-tank/landscape.jpg"
+  },
+  {
+    "name": "doctor-acorn2",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/doctor-acorn2/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/doctor-acorn2/icon-256.png"
+  },
+  {
+    "name": "doublewires",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/doublewires/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/doublewires/doublewires.png"
+  },
+  {
+    "name": "dragon-vs-bricks",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/dragon-vs-bricks/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/dragon-vs-bricks/icon.jpg"
+  },
+  {
+    "name": "drift-boss",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/drift-boss/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "drive-mad",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/drive-mad/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/drive-mad/favicon.ico"
+  },
+  {
+    "name": "duke-nukem-2",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/duke-nukem-2/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/duke-nukem-2/favicon.ico"
+  },
+  {
+    "name": "dumbwaystodie",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/dumbwaystodie/dumbwaystodie.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/dumbwaystodie/image.png"
+  },
+  {
+    "name": "earntodie",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/earntodie/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/earntodie/loading.png"
+  },
+  {
+    "name": "eggycar",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/eggycar/404.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/eggycar/eggy-car.png"
+  },
+  {
+    "name": "escapingtheprison",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/escapingtheprison/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/escapingtheprison/escapingtheprison.jpg"
+  },
+  {
+    "name": "evil-glitch",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/evil-glitch/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/evil-glitch/evil.png"
+  },
+  {
+    "name": "factoryballs",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/factoryballs/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "fancypantsadventures",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/fancypantsadventures/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/fancypantsadventures/fancypantsadventure.png"
+  },
+  {
+    "name": "fireboywatergirlforesttemple",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/fireboywatergirlforesttemple/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/fireboywatergirlforesttemple/icon-60x60.png"
+  },
+  {
+    "name": "flashtetris",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/flashtetris/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/flashtetris/flashtetris.png"
+  },
+  {
+    "name": "flippy-fish",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/flippy-fish/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/flippy-fish/2022_10_28_0jt_Kleki.png"
+  },
+  {
+    "name": "fridaynightfunkin",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/fridaynightfunkin/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/fridaynightfunkin/favicon.png"
+  },
+  {
+    "name": "fruitninja",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/fruitninja/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/fruitninja/FruitNinjaTeaser.jpg"
+  },
+  {
+    "name": "generic-fishing-game",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/generic-fishing-game/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/generic-fishing-game/banner.png"
+  },
+  {
+    "name": "Trimps",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/Trimps/Kongregate_Game_Shell.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/Trimps/favicon.ico"
+  },
+  {
+    "name": "adrenalinechallenge",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/adrenalinechallenge/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/adrenalinechallenge/adrenalinechallenge.jpg"
+  },
+  {
+    "name": "amazing-rope-police",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/amazing-rope-police/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/amazing-rope-police/amazing-strange-rope-police-vice-spider-vegas.jpg"
+  },
+  {
+    "name": "amidst-the-clouds",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/amidst-the-clouds/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/amidst-the-clouds/splash.png"
+  },
+  {
+    "name": "among-us",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/among-us/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/among-us/penumbra.png"
+  },
+  {
+    "name": "angelunder",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/angelunder/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "angry-sharks",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/angry-sharks/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "aquapark-slides",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/aquapark-slides/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/aquapark-slides/splash.png"
+  },
+  {
+    "name": "astray",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/astray/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/astray/ball.png"
+  },
+  {
+    "name": "backrooms-2d",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/backrooms-2d/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/backrooms-2d/splash.png"
+  },
+  {
+    "name": "bacon-may-die",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/bacon-may-die/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/bacon-may-die/splash.png"
+  },
+  {
+    "name": "ballistic-chickens",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/ballistic-chickens/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/ballistic-chickens/logo.png"
+  },
+  {
+    "name": "basketbros-io",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/basketbros-io/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/basketbros-io/favicon.png"
+  },
+  {
+    "name": "bigredbutton",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/bigredbutton/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/bigredbutton/bigredbutton.png"
+  },
+  {
+    "name": "blockpost",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/blockpost/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/blockpost/thumb.png"
+  },
+  {
+    "name": "bloxors",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/bloxors/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/bloxors/block.png"
+  },
+  {
+    "name": "breakingthebank",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/breakingthebank/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/breakingthebank/breakingthebank.png"
+  },
+  {
+    "name": "btts",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/btts/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/btts/download.gif"
+  },
+  {
+    "name": "burger-and-frights",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/burger-and-frights/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/burger-and-frights/icon.png"
+  },
+  {
+    "name": "cannon-basketball-4",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/cannon-basketball-4/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "canyondefense",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/canyondefense/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/canyondefense/canyondefense.png"
+  },
+  {
+    "name": "cars-simulator",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/cars-simulator/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/cars-simulator/splash.png"
+  },
+  {
+    "name": "champion-island",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/champion-island/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/champion-island/CTA-Archery-174787996-174787824.png"
+  },
+  {
+    "name": "championarcher",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/championarcher/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/championarcher/championarcher.png"
+  },
+  {
+    "name": "chrome-dino",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/chrome-dino/1_hurdling.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/chrome-dino/favicon.ico"
+  },
+  {
+    "name": "cnpingpong",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/cnpingpong/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/cnpingpong/tabletennisultimate.png"
+  },
+  {
+    "name": "connect3",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/connect3/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/connect3/connect3.png"
+  },
+  {
+    "name": "craftmine",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/craftmine/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "ctr",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/ctr/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/ctr/logo.png"
+  },
+  {
+    "name": "ctr-holiday",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/ctr-holiday/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/ctr-holiday/Holiday_Gift.webp"
+  },
+  {
     "name": "2048-multitask",
     "url": "https://kaizo-theassetsvro2.onrender.com/games/2048-multitask/index.html",
     "image": "https://kaizo-theassetsvro2.onrender.com/games/2048-multitask/favicon.ico"
