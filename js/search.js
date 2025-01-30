@@ -5,36 +5,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchBarContainer = document.getElementById('search-bar-container');
   const closeButton = document.getElementById('close-search'); // Close button
   const gamesCountHeading = document.getElementById('games-count-heading'); // Get the heading element
-  let gamesData = [];
+
 
   // Fetch games data
-  const gameFiles = [
-  'https://kaizo-theassetsvro.onrender.com/games/games.json',
-  'https://kaizo-theassetsvro2.onrender.com/games/games.json'
+const gameFiles = [
+  'games/games.json',
+  'games/games2.json'
 ];
 
-let gamesData = []; // Store all fetched games
+Promise.all(gameFiles.map(url => fetch(url).then(res => res.json()).catch(err => {
+  console.error(`Error fetching ${url}:`, err);
+  return []; // Return an empty array if there's an error
+})))
+  .then(gameLists => {
+    // Merge all game lists into one array
+    let allGames = gameLists.flat();
 
-// Function to fetch and merge multiple games.json files
-async function fetchAllGames() {
-  try {
-    const responses = await Promise.all(gameFiles.map(url => fetch(url).then(res => res.json())));
-    
-    // Merge all games, ensuring no duplicates
-    const mergedGames = responses.flat().reduce((acc, game) => {
-      if (!acc.some(g => g.url === game.url)) acc.push(game);
-      return acc;
-    }, []);
+    // Remove duplicates based on game name
+    let uniqueGames = Array.from(new Map(allGames.map(game => [game.name, game])).values());
 
-    gamesData = mergedGames;
-    displayAllGames(gamesData); // Display all games
-    updateGamesCount(gamesData); // Update game count
-  } catch (error) {
+    // Display games and update game count
+    displayAllGames(uniqueGames);
+    updateGamesCount(uniqueGames);
+  })
+  .catch(error => {
     console.error('Error fetching game data:', error);
-  }
-}
+  });
 
-// Function to display games on the page
+// Function to display all games
 function displayAllGames(games) {
   gameLinksContainer.innerHTML = ''; // Clear previous game links
   games.forEach(game => {
@@ -62,9 +60,6 @@ function updateGamesCount(games) {
   const gameCount = games.length; // Get the number of games
   gamesCountHeading.textContent = `Go through our ${gameCount} games we have!`; // Update the heading text
 }
-
-// Start fetching all games
-fetchAllGames();
 
 
   // Function to search games as user types
