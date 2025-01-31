@@ -51,7 +51,7 @@ html, body {
     width: 100%;
     color: hsl(var(--text-primary));
     font-family: var(--font-main);
-    background: linear-gradient(to bottom, #737373, #242424); /* Gradient from light gray to darker gray */
+    background-image: linear-gradient(to right top, #255090, #1e4e95, #184b99, #11499d, #0c46a1);
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
     box-sizing: border-box;

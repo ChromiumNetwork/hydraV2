@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.bunny.net/css?family=pixelify-sans:600');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 #games-count-heading {
-  font-family: 'Pixelify Sans', display;
+  font-family: "Outfit", serif;
   position: relative;  /* Make it relative so we can adjust z-index */
   z-index: 10; /* Ensure the heading appears on top of the navbar */
   margin-top: 5px; /* Add a little space from the top of the page */
@@ -24,13 +25,13 @@
 }
 
 #game-links a {
-  font-family: "Archivo Black", serif;
+  font-family: "Outfit", serif;
   transition: transform 0.45s ease-in-out, box-shadow 0.45s ease-in-out, background-color 0.45s ease-in-out;
   position: relative;
   overflow: hidden;
   z-index: 1;
   padding: 10px; /* Adds space around each game link */
-  background: linear-gradient(to bottom, #2f549a, #223e6d);
+  background: linear-gradient(to bottom, #80adff, #416bb6);
   border-radius: 10px; /* Adds rounded corners for the game links */
   text-decoration: none; /* Removes underline from the links */
   color: white; /* Ensures text color is readable */
@@ -84,7 +85,7 @@
   border-radius: 10px; /* Adds rounded corners to the images */
   overflow: hidden;
   border: 3px solid #416bb6; /* Adds a border to the images */
-  background: linear-gradient(to bottom, #6495ED, #416bb6); /* Adds gradient to the background of the images */
+  background: linear-gradient(to bottom, #80adff, #416bb6); /* Adds gradient to the background of the images */
   padding: 5px; /* Optional padding around the image */
 }
 
@@ -103,5 +104,5 @@
 
 #game-cover:hover {
   background-color: #0d2b76; /* Change to hover background color */
-  color: #ff0; /* Example color change on hover */
+  color: rgb(108, 181, 255); /* Example color change on hover */
 }

@@ -58,7 +58,8 @@ function displayAllGames(games) {
 // Function to update the game count in the heading
 function updateGamesCount(games) {
   const gameCount = games.length; // Get the number of games
-  gamesCountHeading.textContent = `Go through our ${gameCount} games we have!`; // Update the heading text
+  const reponum = '2'
+  gamesCountHeading.textContent = `    Current Game Repositories being used: ${reponum}! & games: ${gameCount}`; // Update the heading text
 }
 
 
