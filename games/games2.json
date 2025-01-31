@@ -1,5 +1,120 @@
 [
   {
+    "name": "core-ball",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/core-ball/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/core-ball/pr_source.png"
+  },
+  {
+    "name": "endlesswar3",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/endlesswar3/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/endlesswar3/endlesswar3.png"
+  },
+  {
+    "name": "fairsquares",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/fairsquares/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/fairsquares/index.apple-touch-icon.png"
+  },
+  {
+    "name": "game-inside",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/game-inside/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "geochallenge",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/geochallenge/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "geodash",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/geodash/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/geodash/geoscratchicon.png"
+  },
+  {
+    "name": "georgeandtheprinter",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/georgeandtheprinter/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "gimme-the-airpod",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/gimme-the-airpod/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "google-feud",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/google-feud/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/google-feud/splash.png"
+  },
+  {
+    "name": "google-snake",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/google-snake/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "gravity-soccer",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/gravity-soccer/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/gravity-soccer/icon-256.png"
+  },
+  {
+    "name": "hackertype",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/hackertype/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/hackertype/favicon.ico"
+  },
+  {
+    "name": "happy-hop",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/happy-hop/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/happy-hop/happy-hop-online.jpg"
+  },
+  {
+    "name": "hardware-tycoon",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/hardware-tycoon/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/hardware-tycoon/icon-114.png"
+  },
+  {
+    "name": "hba",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/hba/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/hba/hoverbotarena.JPG"
+  },
+  {
+    "name": "helicopter",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/helicopter/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/helicopter/helicopter.png"
+  },
+  {
+    "name": "hexempire",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/hexempire/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/hexempire/hexempire.jpg"
+  },
+  {
+    "name": "highrisehop",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/highrisehop/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "iceagebaby",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/iceagebaby/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/iceagebaby/thumb.png"
+  },
+  {
+    "name": "iceagebaby2",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/iceagebaby2/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/iceagebaby2/pinky.jpg"
+  },
+  {
+    "name": "idle-breakout",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/idle-breakout/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "idle-shark",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/idle-shark/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/idle-shark/favicon.ico"
+  },
+  {
+    "name": "impossiblequiz",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/impossiblequiz/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/impossiblequiz/impossiblequiz.png"
+  },
+  {
     "name": "dante",
     "url": "https://kaizo-theassetsvro2.onrender.com/games/dante/index.html",
     "image": "https://kaizo-theassetsvro2.onrender.com/games/dante/__big (1).jpg"
