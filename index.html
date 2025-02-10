@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizo's autoloader</title>
-    <script src="./abc.js"></script>
     <style>
-        @import url('https://fonts.bunny.net/css?family=pixelify-sans:600');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         body {
-            font-family: 'Pixelify Sans', display;
+            font-family: "Montserrat", serif;
             background: linear-gradient(to right, #6495ed, #1050c4); /* Gradient background */
             color: antiquewhite;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         /* For all <code> */
@@ -63,9 +63,9 @@
 <body>
     <center>
         <h1>Welcome to Kaizo's autoloader!</h1><br>
-        <h2>Please enable popup or the thing that appears on the top left to access my website.</h2>
-        <p>Games keep closing itself?  
-            <code id="code-snippet" class="language-javascript">data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%3Ctitle%3Eyeahhh%20lets%20goo%3C%2Ftitle%3E%0A%20%20%3Cscript%20type%3D%22module%22%20src%3D%22https%3A%2F%2Funpkg.com%2Fionicons%407.1.0%2Fdist%2Fionicons%2Fionicons.esm.js%22%3E%3C%2Fscript%3E%0A%20%20%3Cscript%20nomodule%20src%3D%22https%3A%2F%2Funpkg.com%2Fionicons%407.1.0%2Fdist%2Fionicons%2Fionicons.js%22%3E%3C%2Fscript%3E%0A%20%20%3Cstyle%3E%0A%20%20%20%20%2F*%20Full-screen%20iframe%20style%20*%2F%0A%20%20%20%20iframe%20%7B%0A%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%2F*%20Fix%20the%20iframe%20in%20place%20to%20cover%20the%20whole%20screen%20*%2F%0A%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%2F*%20Full%20width%20of%20the%20viewport%20*%2F%0A%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%2F*%20Full%20height%20of%20the%20viewport%20*%2F%0A%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%2F*%20Remove%20the%20border%20*%2F%0A%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%2F*%20Ensure%20it%20behaves%20as%20a%20block-level%20element%20*%2F%0A%20%20%20%20%7D%0A%20%20%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%0A%3Cbody%3E%0A%20%20%3C!--%20Embedding%20the%20Game%20File%20--%3E%0A%20%20%3Ciframe%20id%3D%22game-iframe%22%20src%3D%22https%3A%2F%2Fkaizo-thegoat.onrender.com%2Fmain.html%22%20title%3D%22a%22%3E%3C%2Fiframe%3E%0A%3C%2Fbody%3E%0A%0A%3C%2Fhtml%3E%0A</code>
+        <h2>Ive changed stuff, Instead of a about:blank cloaker, Now it will be a data link, this will be more anonymous as it will make it harder for teachers to see the original link or in this case, the games website itself, and its a more reliable alternative currently.</h2>
+        <p>
+            <code id="code-snippet" class="language-javascript">data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%20%20%3Ctitle%3EClever%20%7C%20Portal%3C%2Ftitle%3E%0A%20%20%20%20%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22https%3A%2F%2Fassets.clever.com%2Flaunchpad%2F4353c19f8%2Ffavicon.ico%22%3E%0A%0A%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20%2F*%20Full-screen%20iframe%20style%20*%2F%0A%20%20%20%20%20%20%20%20iframe%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20position%3A%20fixed%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F*%20Fix%20the%20iframe%20in%20place%20to%20cover%20the%20whole%20screen%20*%2F%0A%20%20%20%20%20%20%20%20%20%20%20%20top%3A%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20left%3A%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F*%20Full%20width%20of%20the%20viewport%20*%2F%0A%20%20%20%20%20%20%20%20%20%20%20%20height%3A%20100%25%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F*%20Full%20height%20of%20the%20viewport%20*%2F%0A%20%20%20%20%20%20%20%20%20%20%20%20border%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F*%20Remove%20the%20border%20*%2F%0A%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20block%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F*%20Ensure%20it%20behaves%20as%20a%20block-level%20element%20*%2F%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%0A%3Cbody%3E%0A%20%20%20%20%3C!--%20Embedding%20the%20Game%20File%20--%3E%0A%20%20%20%20%3Ciframe%20id%3D%22game-iframe%22%20src%3D%22https%3A%2F%2Fkaizo-thegoat.onrender.com%2Fmain.html%22%20title%3D%22a%22%3E%3C%2Fiframe%3E%0A%3C%2Fbody%3E%0A%0A%3C%2Fhtml%3E%0A</code>
             <button class="copy-btn" onclick="copyCode()">Copy</button>
             <script>
                 function copyCode() {
@@ -81,5 +81,7 @@
         </p>
     </center>
 </body>
-
+<footer><br>
+    <center><h3>&copy Chromium Network.</h3><h2>HydraV2 released under the MIT license</h2></center>
+</footer>
 </html>
