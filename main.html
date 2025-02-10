@@ -2,15 +2,16 @@
 <html>
 <head>
   <script src="js/navbar.js"></script>
-  <script src="js/preloader.js"></script>
+  <!-- <script src="js/preloader.js"></script> -->
   <script src="js/search.js"></script>
+  <script src="js/repos.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   
   <link rel="stylesheet" href="styles/games.css">
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/search.css">
-  <link rel="stylesheet" href="styles/preloader.css">
+  <!-- <link rel="stylesheet" href="styles/preloader.css"> -->
 
 
 </head>
@@ -36,7 +37,7 @@
           <div class="navbar-item-inner-icon-wrapper flexbox">
             <ion-icon name="search-outline"></ion-icon>
           </div>
-          <span class="link-text">Search a game</span>
+          <span class="link-text">Broken rn.</span>
         </a>
       </li>
       <li class="navbar-item flexbox-left">
@@ -47,12 +48,12 @@
           <span class="link-text">Home</span>
         </a>
       </li>
-      <li class="navbar-item flexbox-left">
+      <li class="navbar-item flexbox-left repo-list">
         <a class="navbar-item-inner flexbox-left">
           <div class="navbar-item-inner-icon-wrapper flexbox">
-            <ion-icon name="hand-left-outline"></ion-icon>
+            <ion-icon name="file-tray-sharp"></ion-icon>
           </div>
-          <span class="link-text">coming soon!</span>
+          <span class="link-text">Repositories</span>
         </a>
       </li>
       <li class="navbar-item flexbox-left settings-item">
@@ -91,9 +92,30 @@
     </div>
   </div>
 </div>
+<!-- repo list lmaoooo no one cares bout this btw-->
+<div id="repos" class="modal">
+  <div class="modal-container">
+    <div class="modal-container-header">
+      <div class="modal-container-title">
+        <ion-icon name="logo-github"></ion-icon>
+        Repository status
+      </div>
+      </button>
+    </div>
 
+    <div class="modal-container-body">
+      <p>
+        <a href="https://kaizo-theassetsvro.onrender.com/games/games.json" target="_blank">Kaizo's assets:</a><p id="asset1">Loading..</p>
+        <a href="https://kaizo-theassetsvro2.onrender.com/games/games.json" target="_blank">Kaizo's 2nd assets:</a> <p id="asset2">Loading..</p>
+      </p>
+    </div>
+    <div class="modal-container-footer">
+      <button id="close-footer1" class="button is-primary">Continue</button>
+    </div>
+  </div>
+</div>
 
-<!-- Search Bar Modal -->
+<!-- Search Bar Modal
 <div id="search-bar-container">
   <div class="search-bar">
     <input type="text" id="game-search" placeholder="Search a game..." />
@@ -101,17 +123,17 @@
       <ion-icon name="search-outline"></ion-icon>
     </button>
     <!-- Close button -->
-    <button id="close-search" class="close-button"><ion-icon name="close"></ion-icon></button>
+    <!-- <button id="close-search" class="close-button"><ion-icon name="close"></ion-icon></button>
   </div>
   <div id="search-results" class="search-results">
     <!-- Search results will appear here -->
   </div>
-</div>
+</div> -->
 
 
 
 
-<h2 id="games-count-heading">    Current Game Repositories being used: {reponum} & games: {gamenumber}</h2>
+<h2 id="games-count-heading">Repositories being used: {reponum} & games: {gamenumber}</h2>
 <div id="game-links">
   <!-- Game links will be dynamically injected here -->
 </div>

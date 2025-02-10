@@ -1,0 +1,2 @@
+asset1 = working
+asset2 = working

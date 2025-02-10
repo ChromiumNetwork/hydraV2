@@ -59,7 +59,7 @@ function displayAllGames(games) {
 function updateGamesCount(games) {
   const gameCount = games.length; // Get the number of games
   const reponum = '2'
-  gamesCountHeading.textContent = `    Current Game Repositories being used: ${reponum}! & games: ${gameCount}`; // Update the heading text
+  gamesCountHeading.textContent = `Repositories being used: ${reponum} & games: ${gameCount}`; // Update the heading text
 }
 
 

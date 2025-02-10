@@ -1,5 +1,60 @@
 [
   {
+    "name": "knife-master",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/knife-master/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/knife-master/512x340.jpg"
+  },
+  {
+    "name": "linerider",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/linerider/linerider.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/linerider/6954B825-C61C-41E0-BFD9-7EA4FC6D0FE1.jpeg"
+  },
+  {
+    "name": "madalin-stunt-cars-3",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/madalin-stunt-cars-3/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "mc2d",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/mc2d/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "meme2048",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/meme2048/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/meme2048/favicon.ico"
+  },
+  {
+    "name": "mindustry",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/mindustry/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/mindustry/splash.png"
+  },
+  {
+    "name": "minecraft-classic",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/minecraft-classic/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/minecraft-classic/pack.png"
+  },
+  {
+    "name": "minesweeper",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/minesweeper/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/assets/notfound.png"
+  },
+  {
+    "name": "miniputt",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/miniputt/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/miniputt/miniputt.png"
+  },
+  {
+    "name": "osu!",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/osu!/faq.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/osu!/favicon.png"
+  },
+  {
+    "name": "papery-planes",
+    "url": "https://kaizo-theassetsvro2.onrender.com/games/papery-planes/index.html",
+    "image": "https://kaizo-theassetsvro2.onrender.com/games/papery-planes/splash.jpg"
+  },
+  {
     "name": "core-ball",
     "url": "https://kaizo-theassetsvro2.onrender.com/games/core-ball/index.html",
     "image": "https://kaizo-theassetsvro2.onrender.com/games/core-ball/pr_source.png"

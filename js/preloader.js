@@ -2,6 +2,8 @@
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   const tipText = [
+    "This is an exclusive sandisop123 audio <- lmao.",
+    "follow naggetsxd on instagram 😭",
     "I try to update the games!",
     "any recommendations? send me a email about a game!",
     "DXWare is a good service!",

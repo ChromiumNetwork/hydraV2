@@ -555,11 +555,11 @@ select {
 }
 
 .modal-container-body {
-  padding: 24px 32px 32px;
-  overflow-y: auto;
-  font-size: 1rem;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Ensures spacing between status rows */
 }
+
 
 .rtf {
   h1,
@@ -681,6 +681,7 @@ select {
     transform: scale(1);
   }
 }
+
 /* support me */
 .modal {
     position: fixed; /* Ensures the modal is fixed relative to the viewport */
@@ -886,4 +887,41 @@ select {
     opacity: 1;
     transform: scale(1);
   }
+}
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.status {
+  display: inline-block; /* Ensures it stays beside the link */
+  padding: 5px 10px;
+  min-width: 80px; /* Prevents it from shrinking */
+  text-align: center; /* Centers the text inside */
+  border-radius: 5px;
+}
+
+
+.working {
+  color: #fff;
+  background-color: rgb(26, 180, 26);
+  animation: flash 3s infinite alternate;
+}
+
+.failing {
+  color: #fff;
+  background-color: rgb(182, 47, 47);
+  animation: flash 3s infinite alternate;
+}
+
+/* Align the link and status side by side */
+.status-container {
+  display: flex;
+  align-items: center; /* Aligns items in the center */
+  justify-content: flex-start; /* Ensures left alignment */
+  gap: 10px; /* Spacing between link and status */
+  margin-bottom: 10px;
+  flex-wrap: nowrap; /* Ensures items stay on the same line */
+  width: 100%; /* Prevents unwanted wrapping */
 }
